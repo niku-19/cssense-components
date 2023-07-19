@@ -1,0 +1,323 @@
+.container {
+  width: 90%;
+  height: max-content;
+  margin: 0rem auto;
+  padding: 0.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.button__header {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.button__subHeader {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.button__showCase__container {
+  width: 100%;
+  height: 12rem;
+  margin: 0rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #cccccc;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: #fff;
+}
+
+.btn-secondary:active {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+.btn-success:active {
+  background-color: #1e7e34;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+
+.btn-danger:active {
+  background-color: #bd2130;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  color: #000;
+}
+
+.btn-warning:active {
+  background-color: #d39e00;
+  color: #000;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+  color: #fff;
+}
+
+.btn-info:active {
+  background-color: #117a8b;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-light:hover {
+  background-color: #dae0e5;
+  color: #212529;
+}
+
+.btn-light:active {
+  background-color: #ced4da;
+  color: #212529;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+  color: #fff;
+}
+
+.btn-dark:active {
+  background-color: #1d2124;
+  color: #fff;
+}
+
+.btn-link {
+  background-color: transparent;
+}
+
+.btn-link:hover {
+  background-color: transparent;
+}
+
+.btn-link:active {
+  background-color: transparent;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 0.1rem solid #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  border: 0.1rem solid #007bff;
+}
+
+.btn-outline-primary:active {
+  background-color: #0062cc;
+  border: 0.1rem solid #0062cc;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 0.1rem solid #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  border: 0.1rem solid #6c757d;
+}
+
+.btn-outline-secondary:active {
+  background-color: #545b62;
+  border: 0.1rem solid #545b62;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  border: 0.1rem solid #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  border: 0.1rem solid #28a745;
+}
+
+.btn-outline-success:active {
+  background-color: #1e7e34;
+  border: 0.1rem solid #1e7e34;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  border: 0.1rem solid #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  border: 0.1rem solid #dc3545;
+}
+
+.btn-outline-danger:active {
+  background-color: #bd2130;
+  border: 0.1rem solid #bd2130;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  border: 0.1rem solid #ffc107;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  border: 0.1rem solid #ffc107;
+}
+
+.btn-outline-warning:active {
+  background-color: #d39e00;
+  border: 0.1rem solid #d39e00;
+}
+
+.btn-outline-info {
+  background-color: transparent;
+  border: 0.1rem solid #17a2b8;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  border: 0.1rem solid #17a2b8;
+}
+
+.btn-outline-info:active {
+  background-color: #117a8b;
+  border: 0.1rem solid #117a8b;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border: 0.1rem solid #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  border: 0.1rem solid #f8f9fa;
+}
+
+.btn-outline-light:active {
+  background-color: #ced4da;
+  border: 0.1rem solid #ced4da;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 0.1rem solid #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  border: 0.1rem solid #343a40;
+}
+
+.btn-outline-dark:active {
+  background-color: #1d2124;
+  border: 0.1rem solid #1d2124;
+}
+
+.btn-outline-link {
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+}
+
+.btn-outline-link:hover {
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+}
+
+.btn-outline-link:active {
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}

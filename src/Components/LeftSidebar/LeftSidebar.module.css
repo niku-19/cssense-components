@@ -1,0 +1,128 @@
+.leftSide__container {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.search__inp {
+  width: 90%;
+  height: 4rem;
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search__input__feild {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+}
+
+.search__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #ccc;
+  object-fit: contain;
+}
+
+.scrooll__container {
+  width: 100%;
+  height: calc(100vh - 14rem);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.important__link {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.important__link__heading,
+.pre__build__components__heading {
+  width: 100%;
+  height: max-content;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 0rem 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  letter-spacing: 0.2rem;
+}
+
+.get__started__btn,
+.pre__build__components__link {
+  width: 90%;
+  height: 4rem;
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.55s;
+}
+
+.get__started__btn:hover,
+.pre__build__components__link:hover {
+  width: 90%;
+  height: 4rem;
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  color: #fff;
+  background-color: #00a4e1;
+  border-radius: 0.5rem;
+  border-left: 10px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.get__started__btn__active,
+.pre__build__components__link__active {
+  width: 90%;
+  height: 4rem;
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  color: #fff;
+  background-color: #00a4e1;
+  border-radius: 0.5rem;
+  border-left: 10px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.pre__build__components {
+  width: 100%;
+  height: auto;
+}

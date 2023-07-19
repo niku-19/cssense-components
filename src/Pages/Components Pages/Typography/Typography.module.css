@@ -1,0 +1,18 @@
+.typography__page__container {
+  width: 90%;
+  margin: 0 auto;
+  height: calc(100vh - 8rem);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 2rem;
+}
+
+.left__side__container {
+  max-width: 100%;
+  height: calc(100vh - 8rem);
+}
+
+.right__side__container {
+  max-width: 100%;
+  height: calc(100vh - 8rem);
+}
