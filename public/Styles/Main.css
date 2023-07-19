@@ -1,5 +1,16 @@
-@import url("../../src/Pre-Built Components/Button/Button.css");
+@import url("/src/PreBuiltComponents/Button/Button.css");
 
-.hello {
-  color: red;
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #0062cc;
+  color: #fff;
 }

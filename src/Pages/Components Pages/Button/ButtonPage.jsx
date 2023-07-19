@@ -3,7 +3,7 @@ import React from "react";
 //styles import
 import styles from "./Button.module.css";
 import LeftSidebar from "../../../Components/LeftSidebar/LeftSidebar";
-import Button from "../../../Pre-Built Components/Button/Button";
+import Button from "../../../PreBuiltComponents/Button/Button";
 
 const ButtonPage = () => {
   return (
