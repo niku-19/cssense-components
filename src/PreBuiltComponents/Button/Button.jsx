@@ -2,6 +2,7 @@ import React from "react";
 //styles import
 import styles from "./Button.module.css";
 import CodeShare from "../../Components/Code Share/CodeShare";
+import ComponentDisplay from "../../Components/Component display/ComponentDisplay";
 const Button = () => {
   return (
     <div className={styles.container}>
@@ -17,7 +18,7 @@ const Button = () => {
         CSSENSE includes several button variants, each serving its own semantic
         purpose, with a few extras thrown in for more control.
       </p>
-      <div className={styles.button__showCase__container}>
+      <ComponentDisplay>
         <button className="btn">Default</button>
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">Secondary</button>
@@ -27,7 +28,7 @@ const Button = () => {
         <button className="btn btn-info">Info</button>
         <button className="btn btn-light">Light</button>
         <button className="btn btn-dark">Dark</button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>
@@ -61,7 +62,7 @@ const Button = () => {
         Replace the default modifier classes with the .btn-outline-* ones to
         remove all background images and colors on any button.
       </p>
-      <div className={styles.button__showCase__container}>
+      <ComponentDisplay>
         <button type="button" className="btn btn-outline-primary">
           Primary
         </button>
@@ -86,7 +87,7 @@ const Button = () => {
         <button type="button" className="btn btn-outline-dark">
           Dark
         </button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>
@@ -116,7 +117,7 @@ const Button = () => {
         Button with link is used to link from one page to another. here href is
         used to link to another page.
       </p>
-      <div className={styles.button__showCase__container}>
+      <ComponentDisplay>
         <a href="/docs/button" type="button" className="btn btn-primary">
           Primary
         </a>
@@ -129,7 +130,7 @@ const Button = () => {
         <a href="/docs/button" type="button" className="btn btn-dark">
           Dark
         </a>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>
@@ -150,7 +151,7 @@ const Button = () => {
       <p className={styles.about__title}>
         You can use Icons in your Buttons respectively.
       </p>
-      <div className={styles.button__showCase__container}>
+      <ComponentDisplay>
         <button href="/docs/button" type="button" className="btn btn-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -204,23 +205,31 @@ const Button = () => {
           </svg>
           Dark
         </button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code dont
         forget to replace svg tag in button tag with your own svg tag. you can
         use any svg,icons,img in button tag:
       </p>
       <CodeShare
-        highlight="1,3,5,7,9,11,13,15,17,19"
+        highlight="1,3,4,5,7,8,9,11,12,13,15,16,17"
         code={`
                 < -- For icon Primary Button --> 
-        <a href="/docs/button" type="button" className="btn btn-primary"> <svg/> Primary</a>
+        <a href="/docs/button" type="button" className="btn btn-primary"> 
+          <svg/> Primary
+        </a>
                 < -- For icon Success Button -->
-        <a href="/docs/button" type="button" className="btn btn-success"> <svg/> Success</a>
+        <a href="/docs/button" type="button" className="btn btn-success">
+          <svg/> Success
+        </a>
                 < -- For icon Warning Button --> 
-        <a href="/docs/button" type="button" className="btn btn-warning"> <svg/> Warning</a>
+        <a href="/docs/button" type="button" className="btn btn-warning">
+        <svg/> Warning
+        </a>
                 < -- For icon Dark Button -->
-        <a href="/docs/button" type="button" className="btn btn-dark"> <svg/> Dark</a>
+        <a href="/docs/button" type="button" className="btn btn-dark">
+          <svg/> Dark
+        </a>
         `}
       />
       <h1 className={styles.title}>Disabled Button</h1>
@@ -229,7 +238,7 @@ const Button = () => {
         element. Disabled buttons have pointer-events: none applied to,
         preventing hover and active states from triggering.
       </p>
-      <div className={styles.button__showCase__container}>
+      <ComponentDisplay>
         <button type="button" className="btn btn-primary disabled">
           Primary
         </button>
@@ -242,7 +251,7 @@ const Button = () => {
         <button type="button" className="btn btn-dark disabled">
           Dark
         </button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>
@@ -264,20 +273,20 @@ const Button = () => {
         Fancy larger or smaller buttons? Add .btn-lg or .btn-sm for additional
         sizes.
       </p>
-      <div className={styles.button__showCase__container}>
-        <button type="button" className="btn btn-primary btn-lg">
+      <ComponentDisplay>
+        <button type="button" className=" btn-primary btn-lg">
           Primary
         </button>
-        <button type="button" className="btn btn-success btn-lg">
+        <button type="button" className=" btn-success btn-lg">
           Success
         </button>
-        <button type="button" className="btn btn-warning btn-lg">
+        <button type="button" className=" btn-warning btn-lg">
           Warning
         </button>
-        <button type="button" className="btn btn-dark btn-lg">
+        <button type="button" className="btn-dark btn-lg">
           Dark
         </button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>
@@ -294,20 +303,20 @@ const Button = () => {
         <button className="btn btn-dark btn-lg">Dark</button>
         `}
       />
-      <div className={styles.button__showCase__container}>
-        <button type="button" className="btn btn-primary btn-sm">
+      <ComponentDisplay>
+        <button type="button" className=" btn-primary btn-sm">
           Primary
         </button>
-        <button type="button" className="btn btn-success btn-sm">
+        <button type="button" className=" btn-success btn-sm">
           Success
         </button>
-        <button type="button" className="btn btn-warning btn-sm">
+        <button type="button" className="btn-warning btn-sm">
           Warning
         </button>
-        <button type="button" className="btn btn-dark btn-sm">
+        <button type="button" className=" btn-dark btn-sm">
           Dark
         </button>
-      </div>
+      </ComponentDisplay>
       <p className={styles.copy__code__des}>
         To achieve the above buttons, you need to follow the following code:
       </p>

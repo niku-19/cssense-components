@@ -45,11 +45,12 @@
 }
 
 .scrooll__container::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.2rem;
 }
 
 .scrooll__container::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
 }
 
 .scrooll__container::-webkit-scrollbar-thumb {

@@ -2,20 +2,20 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Header/Navbar";
 import Home from "./Pages/Home/Home";
 import GetStarted from "./Pages/Get Started/GetStarted";
-import ButtonPage from "./Pages/Components Pages/Button/ButtonPage";
-import Avatar from "./Pages/Components Pages/Avatar/Avatar.jsx";
-import Alert from "./Pages/Components Pages/Alert/Alert.jsx";
-import Badges from "./Pages/Components Pages/Badges/Badges.jsx";
-import Card from "./Pages/Components Pages/Card/Card.jsx";
-import Image from "./Pages/Components Pages/Image/Image.jsx";
-import Input from "./Pages/Components Pages/Input/Input.jsx";
-import Typography from "./Pages/Components Pages/Typography/Typography.jsx";
-import List from "./Pages/Components Pages/List/List.jsx";
-import Navigation from "./Pages/Components Pages/Navigation/Navigation.jsx";
-import Modal from "./Pages/Components Pages/Modal/Modal.jsx";
-import Rating from "./Pages/Components Pages/Rating/Rating.jsx";
-import Snackbar from "./Pages/Components Pages/Snackbar/Snackbar.jsx";
-import Grid from "./Pages/Components Pages/Grid/Grid.jsx";
+import Avatar from "./PreBuiltComponents/Avatar/Avatar";
+import Alert from "./PreBuiltComponents/Alert/Alert";
+import Badges from "./PreBuiltComponents/Badges/Badges";
+import Card from "./PreBuiltComponents/Card/Card";
+import Image from "./PreBuiltComponents/Image/Image";
+import Input from "./PreBuiltComponents/Input/Input";
+import Typography from "./PreBuiltComponents/Typography/Typography";
+import List from "./PreBuiltComponents/List/List";
+import Navigation from "./PreBuiltComponents/Navigation/Navigation";
+import Modal from "./PreBuiltComponents/Modal/Modal";
+import Rating from "./PreBuiltComponents/Rating/Rating";
+import Snackbar from "./PreBuiltComponents/Snackbar/Snackbar";
+import Grid from "./PreBuiltComponents/Grid/Grid";
+import Button from "./PreBuiltComponents/Button/Button";
 
 function App() {
   return (
@@ -24,20 +24,118 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/get-started" element={<GetStarted />} />
-        <Route path="/docs/avatar" element={<Avatar />} />
-        <Route path="/docs/alert" element={<Alert />} />
-        <Route path="/docs/badge" element={<Badges />} />
-        <Route path="/docs/button" element={<ButtonPage />} />
-        <Route path="/docs/card" element={<Card />} />
-        <Route path="/docs/images" element={<Image />} />
-        <Route path="/docs/input" element={<Input />} />
-        <Route path="/docs/typography" element={<Typography />} />
-        <Route path="/docs/list" element={<List />} />
-        <Route path="/docs/navigation" element={<Navigation />} />
-        <Route path="/docs/modal" element={<Modal />} />
-        <Route path="/docs/rating" element={<Rating />} />
-        <Route path="/docs/snackbar" element={<Snackbar />} />
-        <Route path="/docs/grid" element={<Grid />} />
+        <Route
+          path="/docs/avatar"
+          element={
+            <GetStarted>
+              <Avatar />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/alert"
+          element={
+            <GetStarted>
+              <Alert />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/badge"
+          element={
+            <GetStarted>
+              <Badges />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/button"
+          element={
+            <GetStarted>
+              <Button />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/card"
+          element={
+            <GetStarted>
+              <Card />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/images"
+          element={
+            <GetStarted>
+              <Image />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/input"
+          element={
+            <GetStarted>
+              <Input />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/typography"
+          element={
+            <GetStarted>
+              <Typography />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/list"
+          element={
+            <GetStarted>
+              <List />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/navigation"
+          element={
+            <GetStarted>
+              <Navigation />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/modal"
+          element={
+            <GetStarted>
+              <Modal />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/rating"
+          element={
+            <GetStarted>
+              <Rating />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/snackbar"
+          element={
+            <GetStarted>
+              <Snackbar />
+            </GetStarted>
+          }
+        />
+        <Route
+          path="/docs/grid"
+          element={
+            <GetStarted>
+              <Grid />
+            </GetStarted>
+          }
+        />
       </Routes>
     </>
   );

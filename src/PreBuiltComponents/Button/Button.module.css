@@ -31,17 +31,6 @@
   margin: 0.5rem 0;
 }
 
-.button__showCase__container {
-  width: 100%;
-  height: max-content;
-  padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
-  grid-gap: 1rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-}
-
 .copy__code__des {
   font-size: 1rem;
   font-weight: 300;

@@ -29,7 +29,7 @@ body {
   line-height: 1.5;
   display: block;
   min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("/public/Images/background-1.jpg");
   background-position: center;
   background-size: cover;
