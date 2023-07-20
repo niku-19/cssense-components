@@ -1,25 +1,22 @@
-@import url("/src/PreBuiltComponents/Button/Button.css");
+@import url("./Button.css");
 
-.btn {
-  width: 12rem;
-  height: 4rem;
-  border-radius: 0.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #0069d9;
-  color: #fff;
-}
-
-.btn-primary:active {
-  background-color: #0062cc;
-  color: #fff;
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #ffffff;
+  --lynx-white-color: #f7f7f7;
+  --voilet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --failed-color: rgb(231, 52, 52);
+  --warning-color: #ffeb3b;
+  --text-red: red;
+  --text-green: green;
+  --text-blue: blue;
+  --text-cyan: cyan;
 }

@@ -30,24 +30,6 @@ body {
   background-repeat: no-repeat;
   font-family: "Inter Tight", sans-serif;
 }
-:root {
-  --primary-color: #ff3b30;
-  --secondary-color: #fff6ea;
-  --action-color: #3b82f6;
-  --grey-color: #9a9a9a;
-  --black-color: #282828;
-  --white-color: #ffffff;
-  --lynx-white-color: #f7f7f7;
-  --voilet-color: #5348c7;
-  --lynx-gray-color: #c5c5c5;
-  --success-color: rgb(10, 209, 10);
-  --failed-color: rgb(231, 52, 52);
-  --warning-color: #ffeb3b;
-  --text-red: red;
-  --text-green: green;
-  --text-blue: blue;
-  --text-cyan: cyan;
-}
 
 a {
   color: inherit;
@@ -63,7 +45,7 @@ a {
   margin: 1rem 0;
   overflow: hidden;
   font-family: monospace;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   tab-size: 4;
   font-weight: 500;
