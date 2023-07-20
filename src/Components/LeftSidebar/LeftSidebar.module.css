@@ -4,15 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 .search__inp {
   width: 90%;
-  height: 4rem;
+  height: 2.7rem;
   margin: 1rem auto;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -24,15 +24,15 @@
   height: 100%;
   border: none;
   outline: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
   background-color: transparent;
   color: #000;
   font-weight: 500;
 }
 
 .search__icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   color: #ccc;
   object-fit: contain;
 }
@@ -42,6 +42,20 @@
   height: calc(100vh - 14rem);
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.scrooll__container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.scrooll__container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.scrooll__container::-webkit-scrollbar-thumb {
+  background-color: #00a4e1;
+  border-radius: 1rem;
+  outline: 1px solid slategrey;
 }
 
 .important__link {
@@ -56,11 +70,10 @@
 .pre__build__components__heading {
   width: 100%;
   height: max-content;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   color: #000;
-  margin-bottom: 1rem;
   border-bottom: 2px solid #ccc;
   letter-spacing: 0.2rem;
 }
@@ -68,16 +81,16 @@
 .get__started__btn,
 .pre__build__components__link {
   width: 90%;
-  height: 4rem;
+  height: 3rem;
   margin: 1rem auto;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   text-transform: capitalize;
@@ -87,7 +100,7 @@
 .get__started__btn:hover,
 .pre__build__components__link:hover {
   width: 90%;
-  height: 4rem;
+  height: 3rem;
   margin: 1rem auto;
   padding: 0rem 2rem;
   color: #fff;
@@ -97,7 +110,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   text-transform: capitalize;
@@ -106,7 +119,7 @@
 .get__started__btn__active,
 .pre__build__components__link__active {
   width: 90%;
-  height: 4rem;
+  height: 3rem;
   margin: 1rem auto;
   padding: 0rem 2rem;
   color: #fff;
@@ -116,7 +129,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   text-transform: capitalize;

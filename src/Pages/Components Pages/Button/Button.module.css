@@ -18,3 +18,24 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+
+@media screen and (max-width: 500px) {
+  .left__side__container {
+    position: absolute;
+    top: 4rem;
+    left: -450px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: rgba(0, 164, 225, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .button__page__container {
+    grid-template-columns: 100%;
+  }
+}

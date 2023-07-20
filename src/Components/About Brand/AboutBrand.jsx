@@ -22,7 +22,7 @@ const AboutBrand = () => {
         </h2>
       </div>
       <div className={styles.get__started__btn__container}>
-        <Link to={"/get-started"}>
+        <Link to={"/get-started"} className={styles.link}>
           <button className={styles.getStarted__btn}>Get Started</button>
         </Link>
         <div className={styles.seacrch__input__box}>

@@ -55,7 +55,7 @@ const Button = () => {
         `}
       />
       {/* all button variants are applied by using the .btn class. This class will */}
-      <h1>Outline buttons </h1>
+      <h1 className={styles.title}>Outline buttons </h1>
       <p className={styles.about__title}>
         In need of a button, but not the hefty background colors they bring?
         Replace the default modifier classes with the .btn-outline-* ones to
@@ -111,7 +111,7 @@ const Button = () => {
         <button className="btn btn-outline-dark">Dark</button>
         `}
       />
-      <h1>Button with link</h1>
+      <h1 className={styles.title}>Button with link</h1>
       <p className={styles.about__title}>
         Button with link is used to link from one page to another. here href is
         used to link to another page.
@@ -146,7 +146,7 @@ const Button = () => {
         <a href="/docs/button" type="button" className="btn btn-dark">Dark</a>
         `}
       />
-      <h1>Button with icon</h1>
+      <h1 className={styles.title}>Button with icon</h1>
       <p className={styles.about__title}>
         You can use Icons in your Buttons respectively.
       </p>
@@ -223,7 +223,7 @@ const Button = () => {
         <a href="/docs/button" type="button" className="btn btn-dark"> <svg/> Dark</a>
         `}
       />
-      <h1>Disabled Button</h1>
+      <h1 className={styles.title}>Disabled Button</h1>
       <p className={styles.about__title}>
         Make buttons look inactive by adding the .disabled class to any `button`
         element. Disabled buttons have pointer-events: none applied to,
@@ -259,7 +259,7 @@ const Button = () => {
         <button className="btn btn-dark disabled">Dark</button>
         `}
       />
-      <h1>Sizes</h1>
+      <h1 className={styles.title}>Sizes</h1>
       <p className={styles.about__title}>
         Fancy larger or smaller buttons? Add .btn-lg or .btn-sm for additional
         sizes.
