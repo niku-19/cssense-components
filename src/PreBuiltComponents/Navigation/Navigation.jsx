@@ -1,9 +1,59 @@
 import React from "react";
+import CodeShare from "../../Components/Code Share/CodeShare";
+import ComponentDisplay from "../../Components/Component display/ComponentDisplay";
+import {
+  FaBarsStaggered,
+  FaPrint,
+  FaBookBookmark,
+  FaDownload,
+} from "react-icons/fa6";
+import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   return (
-    <div>
-      <h1>Hello Navigation</h1>
+    <div className={styles.container}>
+      <h1 className={styles.navigation__header}>Navigation</h1>
+      <h2 className={styles.navigation__subHeader}>
+        Navigation helps users of a website to easily access sections of a
+        webpage or access completely different websites.
+      </h2>
+      <h2 className={styles.navigation__subHeader}>
+        This is the default navigation bar from our component library. You are
+        wellcome to add your own styles to it.
+      </h2>
+
+      <ComponentDisplay>
+        <div className="header_component">
+          <div className="header_menu">
+            <FaBarsStaggered className="icons" />
+            <h1>neoG 23 Batch</h1>
+          </div>
+          <div className="header__btns">
+            <FaDownload className="icons" />
+            <FaPrint className="icons" />
+            <FaBookBookmark className="icons" />
+          </div>
+        </div>
+      </ComponentDisplay>
+      <p className={styles.copy__code__des}>
+        To achieve the above navigations, you need to follow the following code:
+      </p>
+      <CodeShare
+        code={`
+        <div className="header_component">
+        <div className="header_menu">
+          <i className="fa fa-bars" aria-hidden="true"></i>
+          <h1>neoG 23 Batch</h1>
+        </div>
+        <div className="header__btns">
+          <i className="fa fa-download" aria-hidden="true"></i>
+          <i className="fa fa-print" aria-hidden="true"></i>
+          <i className="fa fa-bookmark" aria-hidden="true"></i>
+        </div>
+        </div>
+        `}
+      />
+      {/* ---------------> */}
     </div>
   );
 };

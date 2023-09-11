@@ -1,4 +1,15 @@
 @import url("./Button.css");
+@import url("./avatar.css");
+@import url("./alert.css");
+@import url("./badges.css");
+@import url("./card.css");
+@import url("./image.css");
+@import url("./input.css");
+@import url("./text.css");
+@import url("./list.css");
+@import url("./nav.css");
+@import url("./grid.css");
+@import url("./modal.css");
 
 :root {
   --primary-color: #3b82f6;

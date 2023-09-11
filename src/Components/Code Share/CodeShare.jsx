@@ -1,15 +1,14 @@
 import React from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
 
-const CodeShare = ({ code, highlight }) => {
+const CodeShare = ({ code }) => {
   return (
     <CopyBlock
       text={code}
-      language={"HTML"}
+      language={"jsx"}
       theme={dracula}
-      showLineNumbers={true}
       wrapLines
-      highlight={highlight}
+      // highlight={highlight}
     />
   );
 };

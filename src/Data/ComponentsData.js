@@ -59,18 +59,18 @@ const componentsData = [
     description: "A simple navigation component",
     path: "/navigation",
   },
-  {
-    id: 11,
-    name: "Rating",
-    description: "A simple rating component",
-    path: "/rating",
-  },
-  {
-    id: 12,
-    name: "Snackbar",
-    description: "A simple snackbar component",
-    path: "/snackbar",
-  },
+  // {
+  //   id: 11,
+  //   name: "Rating",
+  //   description: "A simple rating component",
+  //   path: "/rating",
+  // },
+  // {
+  //   id: 12,
+  //   name: "Snackbar",
+  //   description: "A simple snackbar component",
+  //   path: "/snackbar",
+  // },
   {
     id: 13,
     name: "Grid",

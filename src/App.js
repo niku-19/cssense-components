@@ -16,6 +16,7 @@ import Rating from "./PreBuiltComponents/Rating/Rating";
 import Snackbar from "./PreBuiltComponents/Snackbar/Snackbar";
 import Grid from "./PreBuiltComponents/Grid/Grid";
 import Button from "./PreBuiltComponents/Button/Button";
+import Setup from "./Components/Setup/Setup";
 
 function App() {
   return (
@@ -23,7 +24,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/get-started" element={<GetStarted />} />
+        <Route
+          path="/get-started"
+          element={
+            <GetStarted>
+              <Setup />
+            </GetStarted>
+          }
+        />
         <Route
           path="/docs/avatar"
           element={

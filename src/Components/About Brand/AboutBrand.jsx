@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // react icons import
 import { BiSearch } from "react-icons/bi";
@@ -6,8 +6,18 @@ import { BiSearch } from "react-icons/bi";
 //styles import
 import styles from "./AboutBrand.module.css";
 import { Link } from "react-router-dom";
+import SearchModal from "../SearchModel/SearchModal";
 
 const AboutBrand = () => {
+  const [showSearchModal, setShowSearchModal] = useState(false);
+
+  const handleSearchModalOpen = () => {
+    setShowSearchModal(true);
+  };
+
+  const handleSearchModalClose = () => {
+    setShowSearchModal(false);
+  };
   return (
     <div className={styles.brand__about__container}>
       <h1 className={styles.brand__heading}>
@@ -30,10 +40,14 @@ const AboutBrand = () => {
           <input
             type="text"
             placeholder="Search Docs"
+            onClick={handleSearchModalOpen}
             className={styles.quick__search__inp}
           />
         </div>
       </div>
+      {showSearchModal && (
+        <SearchModal handleSearchModalClose={handleSearchModalClose} />
+      )}
     </div>
   );
 };

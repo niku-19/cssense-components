@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //react icons import
 import { BiSearch } from "react-icons/bi";
@@ -7,8 +7,19 @@ import { BiSearch } from "react-icons/bi";
 import styles from "./LeftSidebar.module.css";
 import { NavLink } from "react-router-dom";
 import componentsData from "../../Data/ComponentsData";
+import SearchModal from "../SearchModel/SearchModal";
 
 const LeftSidebar = () => {
+  const [showSearchModal, setShowSearchModal] = useState(false);
+
+  const handleSearchModalOpen = () => {
+    setShowSearchModal(true);
+  };
+
+  const handleSearchModalClose = () => {
+    setShowSearchModal(false);
+  };
+
   return (
     <div className={styles.leftSide__container}>
       <div className={styles.search__inp}>
@@ -17,6 +28,7 @@ const LeftSidebar = () => {
           type="text"
           placeholder="Quick Search"
           className={styles.search__input__feild}
+          onClick={handleSearchModalOpen}
         />
       </div>
       <div className={styles.scrooll__container}>
@@ -52,6 +64,9 @@ const LeftSidebar = () => {
           })}
         </div>
       </div>
+      {showSearchModal && (
+        <SearchModal handleSearchModalClose={handleSearchModalClose} />
+      )}
     </div>
   );
 };

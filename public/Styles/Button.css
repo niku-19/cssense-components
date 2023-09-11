@@ -1,4 +1,6 @@
 .btn {
+  width: max-content;
+  height: max-content;
   padding: 0.4rem 5rem;
   border-radius: 0.2rem;
   font-size: 1.5rem;
