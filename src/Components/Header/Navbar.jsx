@@ -2,11 +2,11 @@ import React from "react";
 
 //react icons import
 import { BsGithub } from "react-icons/bs";
-import { FaSun } from "react-icons/fa";
+// import { FaSun } from "react-icons/fa";
 
 //styles import
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,13 +26,19 @@ const Navbar = () => {
         </div>
         <div className={styles.nav__container}>
           <ul className={styles.nav__items}>
-            <li className={styles.nav__list}>Docs</li>
-            <li className={styles.nav__list}>Components</li>
+            <NavLink to={"/get-started"}>
+              <li className={styles.nav__list}>Docs</li>
+            </NavLink>
+            <NavLink to={"/get-started"}>
+              <li className={styles.nav__list}>Components</li>
+            </NavLink>
             <li className={styles.nav__list}> | </li>
             <li className={styles.nav__list}>
               <div className={styles.icons__container}>
-                <FaSun className={styles.light__icon} />
-                <BsGithub className={styles.github__icon} />
+                {/* <FaSun className={styles.light__icon} /> */}
+                <a href="https://github.com/niku-19/cssense-components.git">
+                  <BsGithub className={styles.github__icon} />
+                </a>
               </div>
             </li>
           </ul>
